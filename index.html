@@ -137,25 +137,40 @@ a degree in Graphic Design and currently lives and works in Lviv, Ukraine. Learn
         <h2 class="u-align-center u-custom-font u-text u-text-1">I'd Love To Hear From You! </h2>
         <p class="u-align-center u-custom-font u-large-text u-text u-text-variant u-text-2">I'm a first time author just starting my journey, I'd love to connect, collaborate, and of course facilitate bulk sales!</p>
         <div class="u-border-2 u-border-black u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-form u-palette-5-base u-form-1">
-<form action="https://formspree.io/f/mzzvrwzy" method="POST"
-      style="max-width: 600px; margin: 0 auto; background: rgba(128, 128, 128, 0.7); padding: 32px; border-radius: 12px; font-family: 'Purisa', sans-serif; box-shadow: 0 4px 12px rgba(0,0,0,0.1); color: white;">
-  
-  <label for="name" style="display: block; margin-bottom: 8px; font-weight: bold;">Name</label>
-  <input type="text" id="name" name="name" placeholder="Enter your name" required
-         style="width: 100%; padding: 10px; margin-bottom: 20px; background: rgba(128, 128, 128, 0.7); color: white; border: 2px solid #ccc; border-radius: 6px;">
+<form action="https://formspree.io/f/mzzvrwzy" method="POST" class="u-form u-form-vertical" style="width: 100%; max-width: 700px; margin: 0 auto;">
 
-  <label for="email" style="display: block; margin-bottom: 8px; font-weight: bold;">Email</label>
-  <input type="email" id="email" name="email" placeholder="Enter a valid email address" required
-         style="width: 100%; padding: 10px; margin-bottom: 20px; background: rgba(128, 128, 128, 0.7); color: white; border: 2px solid #ccc; border-radius: 6px;">
+  <div class="u-form-group u-form-name">
+    <label for="name" class="u-custom-font u-label u-text-body-alt-color">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name"
+           class="u-border-3 u-border-white u-custom-font u-input u-input-rectangle u-none"
+           style="width: 100%; padding: 12px; background: transparent; color: white;" required>
+  </div>
 
-  <label for="message" style="display: block; margin-bottom: 8px; font-weight: bold;">Message</label>
-  <textarea id="message" name="message" placeholder="Enter your message" rows="5" required
-            style="width: 100%; padding: 10px; margin-bottom: 20px; background: rgba(128, 128, 128, 0.7); color: white; border: 2px solid #ccc; border-radius: 6px;"></textarea>
+  <div class="u-form-group u-form-email">
+    <label for="email" class="u-custom-font u-label u-text-body-alt-color">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter a valid email address"
+           class="u-border-3 u-border-white u-custom-font u-input u-input-rectangle u-none"
+           style="width: 100%; padding: 12px; background: transparent; color: white;" required>
+  </div>
 
-  <button type="submit"
-          style="background-color: #478ac9; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">
-    Send
-  </button>
+  <div class="u-form-group u-form-message">
+    <label for="message" class="u-custom-font u-label u-text-body-alt-color">Message</label>
+    <textarea id="message" name="message" placeholder="Enter your message" rows="4"
+              class="u-border-3 u-border-white u-custom-font u-input u-input-rectangle u-none"
+              style="width: 100%; padding: 12px; background: transparent; color: white;" required></textarea>
+  </div>
+
+  <div class="u-align-left u-form-group u-form-submit">
+    <button type="submit"
+            class="u-active-palette-1-light-3 u-border-none u-btn u-btn-submit u-button-style u-custom-font u-hover-palette-1-light-3 u-text-palette-1-base u-white u-btn-1"
+            style="width: 100%; padding: 12px; font-weight: bold;">
+      Submit
+    </button>
+  </div>
+
+  <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
+  <div class="u-form-send-error u-form-send-message">Unable to send your message. Please try again later.</div>
+
 </form>
 
         </div>
