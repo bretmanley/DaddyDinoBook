@@ -138,23 +138,25 @@ a degree in Graphic Design and currently lives and works in Lviv, Ukraine. Learn
         <p class="u-align-center u-custom-font u-large-text u-text u-text-variant u-text-2">I'm a first time author just starting my journey, I'd love to connect, collaborate, and of course facilitate bulk sales!</p>
         <div class="u-border-2 u-border-black u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-form u-palette-5-base u-form-1">
 <div style="max-width: 600px; margin: 0 auto;">
-<form action="https://formspree.io/f/mzzvrwzy" method="POST">
-  <label>
-    Your email:
-    <input type="email" name="email" required>
-  </label><br><br>
-  
-  <label>
-    Your name:
-    <input type="text" name="name" required>
-  </label><br><br>
-  
-  <label>
-    Your message:
-    <textarea name="message" rows="5" required></textarea>
-  </label><br><br>
-  
-  <button type="submit" style="background-color: #478ac9; color: white; padding: 10px 20px; border: none; cursor: pointer;">Send</button>
+<form action="https://formspree.io/f/mzzvrwzy" method="POST" style="padding: 32px;">
+  <div>
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+  </div>
+
+  <div>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter a valid email address" required><br><br>
+  </div>
+
+  <div>
+    <label for="message">Message</label><br>
+    <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea><br><br>
+  </div>
+
+  <div>
+    <button type="submit">Submit</button>
+  </div>
 </form>
 </div>
         </div>
