@@ -78,4 +78,21 @@ What If Daddy Were a Dinosaur? will make kids laugh, dream, and most importantly
         <p class="u-small-text u-text u-text-variant u-text-1">(c) Copyright Bret Manley 2025. All Rights Reserved.&nbsp;</p>
       </div></footer>
   
+      <!-- ✅ Google reCAPTCHA injection -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  window.addEventListener('load', function () {
+    const interval = setInterval(() => {
+      const form = document.querySelector("form");
+      if (form && !document.querySelector('.g-recaptcha')) {
+        const captchaDiv = document.createElement("div");
+        captchaDiv.className = "g-recaptcha";
+        captchaDiv.setAttribute("data-sitekey", "6Lc36o8rAAAAAMR6X34BdaI0g5k5j5dRkk0mQpI_"); // Replace with your key
+        form.insertBefore(captchaDiv, form.querySelector("button, [type='submit']") || null);
+        clearInterval(interval);
+      }
+    }, 500); // Try every 500ms until the form appears
+  });
+</script>
+
 </body></html>
