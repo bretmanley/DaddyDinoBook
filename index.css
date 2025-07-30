@@ -687,7 +687,7 @@
 .u-section-5 .u-form-1 {
   height: 419px;
   background-image: none;
-  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  box-shadow: -3px 5px 8px 5px rgba(0, 0, 0, 0.5);
   width: 732px;
   margin: 25px auto 50px;
 }
