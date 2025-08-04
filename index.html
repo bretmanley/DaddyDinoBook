@@ -116,6 +116,17 @@
   }
 
 </style>
+<style>
+  @keyframes fadeInModal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  #faqModal.show {
+    display: flex !important;
+    animation: fadeInModal 0.3s ease-in-out;
+  }
+</style>
 </head>
   <body data-home-page="Daddy-Dino-Book.html" data-home-page-title="Daddy Dino Book" data-path-to-root="./" data-include-products="false" class="u-body u-clearfix u-grey-90 u-xl-mode" data-lang="en"><header class="u-clearfix u-gradient u-header u-image u-sticky u-header" id="header"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-sheet-1">
         <a href="#" class="u-image u-logo u-image-1" data-image-width="538" data-image-height="1027">
@@ -281,17 +292,33 @@ a degree in Graphic Design and currently lives and works in Lviv, Ukraine. Learn
   </div>
 </div>
 <script>
-  document.getElementById("openFaq").onclick = function () {
-    document.getElementById("faqModal").style.display = "flex";
+  const modal = document.getElementById("faqModal");
+  const openBtn = document.getElementById("openFaq");
+  const closeBtn = document.getElementById("closeFaq");
+
+  openBtn.onclick = function () {
+    modal.classList.add("show");
   };
-  document.getElementById("closeFaq").onclick = function () {
-    document.getElementById("faqModal").style.display = "none";
+
+  closeBtn.onclick = function () {
+    modal.classList.remove("show");
+    setTimeout(() => modal.style.display = "none", 300);
   };
+
   window.onclick = function(event) {
-    const modal = document.getElementById("faqModal");
-    if (event.target == modal) {
-      modal.style.display = "none";
+    if (event.target === modal) {
+      modal.classList.remove("show");
+      setTimeout(() => modal.style.display = "none", 300);
     }
   };
+
+  // Ensure modal resets display before showing again
+  const observer = new MutationObserver(() => {
+    if (modal.classList.contains("show")) {
+      modal.style.display = "flex";
+    }
+  });
+
+  observer.observe(modal, { attributes: true, attributeFilter: ['class'] });
 </script>
 </body></html>
