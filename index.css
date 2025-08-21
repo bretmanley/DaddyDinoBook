@@ -894,9 +894,6 @@
   transition: background-color 0.3s ease;
 }
 
-.u-section-kirkus .btn-kirkus:hover {
-  background-color: #6abee8;
-}
 .u-section-kirkus .u-text-1 {
   font-style: italic;
   font-family: PurisaBold;
