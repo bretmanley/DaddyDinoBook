@@ -869,7 +869,7 @@
 }
 .u-section-kirkus {
   background-repeat: no-repeat, no-repeat;
-  background-image: linear-gradient(to bottom, rgba(38, 138, 52, 0.7), rgba(38, 138, 52, 0.7)),
+  background-image: linear-gradient(to bottom, rgba(153, 153, 153, 0.7), rgba(153, 153, 153, 0.7)), 
     url('images/photo-1475965894430-b05c9d13568a.jpeg');
   background-size: cover;
   background-attachment: fixed;
