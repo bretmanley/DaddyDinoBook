@@ -873,6 +873,7 @@
     url('images/photo-1475965894430-b05c9d13568a.jpeg');
   background-size: cover;
   background-attachment: fixed;
+  padding-bottom: 30px;
 }
 .u-section-kirkus .btn-kirkus {
   --radius: 50px;
@@ -883,8 +884,7 @@
   background-image: none;
   box-shadow: -3px 5px 8px 0px rgba(0, 0, 0, 1);
   margin: 42px auto 0 auto;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px auto;
   color:black;
   background-color: #f4e89a;
   border: none;
