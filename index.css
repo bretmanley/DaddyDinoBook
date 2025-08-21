@@ -882,7 +882,7 @@
   letter-spacing: 1px;
   background-image: none;
   box-shadow: -3px 5px 8px 0px rgba(0, 0, 0, 1);
-  margin: 21px auto 0 auto;
+  margin: 42px auto 0 auto;
   padding-top: 12px;
   padding-bottom: 12px;
   color:black;
@@ -906,6 +906,6 @@
 .u-section-kirkus .u-text-2 {
   font-style: italic;
   font-family: PurisaMedium;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-shadow: 2px 5px 8px rgba(0,0,0,0.9);
 }
