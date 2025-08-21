@@ -874,3 +874,25 @@
   background-size: cover;
   background-attachment: fixed;
 }
+.u-section-kirkus .btn-kirkus {
+  --radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  background-image: none;
+  box-shadow: -3px 5px 8px 0px rgba(0, 0, 0, 1);
+  margin: 42px auto 0 auto;
+  padding: 12px 24px;
+  color: white;
+  background-color: #268a34;
+  border: none;
+  border-radius: var(--radius);
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.u-section-kirkus .btn-kirkus:hover {
+  background-color: #3aa654;
+}
