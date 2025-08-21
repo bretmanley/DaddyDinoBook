@@ -884,8 +884,8 @@
   box-shadow: -3px 5px 8px 0px rgba(0, 0, 0, 1);
   margin: 42px auto 0 auto;
   padding: 12px 24px;
-  color: white;
-  background-color: #268a34;
+  color:black;
+  background-color: #f4e89a;
   border: none;
   border-radius: var(--radius);
   text-decoration: none;
@@ -894,5 +894,5 @@
 }
 
 .u-section-kirkus .btn-kirkus:hover {
-  background-color: #3aa654;
+  background-color: #707c2f;
 }
