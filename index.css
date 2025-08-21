@@ -896,3 +896,15 @@
 .u-section-kirkus .btn-kirkus:hover {
   background-color: #707c2f;
 }
+.u-section-kirkus .u-text-1 {
+  font-style: italic;
+  font-family: PurisaBold;
+  font-size: 3rem;
+  text-shadow: 2px 5px 8px rgba(0,0,0,0.9);
+}
+.u-section-kirkus .u-text-2 {
+  font-style: italic;
+  font-family: PurisaMedium;
+  font-size: 3rem;
+  text-shadow: 2px 5px 8px rgba(0,0,0,0.9);
+}
