@@ -392,16 +392,20 @@ a degree in Graphic Design and currently lives and works in Lviv, Ukraine. Learn
   </div>
 </div>
 <script>
-  document.getElementById('openWholesale').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.getElementById('wholesaleModal').style.display = 'flex';
+  // Support multiple "openWholesale" triggers
+  document.querySelectorAll('#openWholesale').forEach(function(el) {
+    el.addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('wholesaleModal').style.display = 'flex';
+    });
   });
 
+  // Close modal
   document.getElementById('closeWholesale').addEventListener('click', function() {
     document.getElementById('wholesaleModal').style.display = 'none';
   });
 
-  // Optional: close when clicking outside the modal box
+  // Close when clicking outside
   window.addEventListener('click', function(event) {
     var modal = document.getElementById('wholesaleModal');
     if (event.target === modal) {
